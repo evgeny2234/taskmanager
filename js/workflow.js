@@ -186,12 +186,17 @@ $( document ).ready(function() {
 			});
 
 			let percent = ((checked*100)/(checked+unchecked));
+
 			percent = Math.round(percent);
 
 			if(isNaN(percent)) {percent = 0;}
 
+			$('[data-progress-bar='+blockId+']')[0].style.backgroundColor = '#337ab7';
 			$('[data-progress-bar='+blockId+']')[0].style.width = percent+'%';
 			$('[data-progress-bar='+blockId+']').parent().prev().text(percent+'%');
+			if(percent == 100) {
+				$('[data-progress-bar='+blockId+']')[0].style.backgroundColor = 'green';
+			}
 
 		});	
 	}
