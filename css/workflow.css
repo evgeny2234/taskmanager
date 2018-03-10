@@ -1,0 +1,105 @@
+#new_task {
+	visibility: hidden;
+}
+.task_block {
+	display: inline-block;
+	float: left;
+}
+.task_block_container {
+	width: 300px
+}
+.panel-heading {
+	position: relative;
+	padding-right: 25px;
+}
+.panel-body {
+	background-color: #f5f5f5;
+}
+.panel-title {
+	padding: 8.5px;
+}
+.delete_task_block {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+
+}
+.input_block_name {
+	display: none; 
+	margin-bottom: 0px !important;
+}
+.input_task_name {
+	background-color: #fff;
+	margin-bottom: 2px;
+}
+.progress {
+	margin: 10px 8.5px;
+	height: 10px;
+	width: 80%;
+}
+.progress_bar {
+	position: relative;
+}
+.percent_text {
+	position: absolute;
+	top: -5px;
+	right: 0px;
+}
+#new_block {
+	visibility: hidden;
+}
+.task_name {
+	margin-bottom: 5px;
+}
+.remove_checkbox {
+	float: right;
+	cursor: pointer;
+}
+.checkbox {
+	margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+}
+.all_tasks {
+	overflow: hidden;
+    user-select: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+}
+.header_block {
+	position: fixed;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-color: #f9f9f9;
+}
+.navbar {
+	border: 0px;
+}
+#create_new_block {
+	margin-left: 20px;
+}
+.list_wrapper {
+	width: 270px;
+	margin: 0 5px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
+body {
+	/* background-color: rgb(81, 152, 57); */
+}
+.add_new_task {
+	margin-top: 10px;
+}
+.checked_task {
+	text-decoration:line-through !important;
+}
+.checked_block {
+	background-color: transparent !important;
+}
