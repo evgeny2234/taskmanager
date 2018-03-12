@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
   	//удаление блока целиком
   	$('body').on('click', '.delete_task_block', function(){
-  		$(this).parent().parent().parent().parent().remove();
+  		$(this).parent().parent().parent().parent().parent().remove();
   		let blockId = $(this).attr('data-blockid');
   		$.ajax({
 		  type: 'POST',
